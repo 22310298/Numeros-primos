@@ -1,0 +1,16 @@
+int menu();
+int primos(int);
+void imprimir_rango();
+void clear();
+
+int menu(){
+    int opcion;
+    printf("\n---- MENU ----\n");
+    printf("1. Es primo?...\n");
+    printf("2. Primo en rango (0 - 100)\n");
+    printf("3. Salir\n");
+    printf("Ingrese la opci%cn: ", 162);
+    scanf("%d", &opcion);
+
+    return opcion;
+}

@@ -1,0 +1,41 @@
+int main(){
+
+    int op;
+    int n;
+
+    do{
+        clear();
+        op=menu();
+        
+        switch (op)
+        {
+            case 1:
+                clear();
+                printf("\nIngresa un numero: ");
+                scanf("%i", &n);
+                if(primos(n) == 1){
+                    printf("\n%i es primo.", n);
+                } else printf("\n%i no es primo.", n);
+                getch();
+                break;
+            case 2:
+                clear();
+                imprimir_rango();
+                break;
+            case 3:
+                clear();
+                printf("\nHasta la proxima.");
+                getch();
+                break;
+
+            default:
+                clear();
+                printf("Opcion invalida");
+                getch();
+        }
+    }while(op!=3);
+    
+
+    getchar();
+    return 0;
+}
